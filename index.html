@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5">
+    <link rel="stylesheet" href="styel.css">
+    <link rel="icon" href="images/code.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Home page</title>
+    <style>
+        .navbar {
+            justify-content: center;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-brand {
+            margin-right: auto;
+        }
+        .navbar-logo {
+            margin-right: 20px; /* Adjust this value to move the logo further to the left */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 3rem 2rem; /* Adjust the padding to bring the header closer to the images */
+        }
+        .blur {
+            position: absolute;
+            box-shadow: 0 0 1000px 55px rgb(0, 255, 179);
+            z-index: -100;
+        }
+        h4 {
+            color: wheat;
+            padding-bottom: 20px;
+            font-size: large;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 4rem;
+        }
+        h1 span {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px #fff;
+        }
+        p {
+            color: white;
+            text-align: justify;
+            font-size: 16px;
+           
+        }
+        h4, h1, h2 {
+            animation: fadeInUp 7s ease-in-out infinite;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .image-setting {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            filter:blur(1px);
+            gap: 10px; /* Adjust the gap between the images */
+        }
+        h2 {
+            background-color: silver;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+        h5 {
+            text-align: center;
+            color: #fff;
+        }
+        .social-icon-container {
+            position: relative;
+            bottom: 26px;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+        .social-icon {
+            font-size: 50px; 
+            margin: 0 10px; 
+            color: rgb(255, 252, 252);
+        }
+        @media (max-width: 768px) {
+            .image-setting img {
+                display: none;
+            }
+        }
+        .name {
+    background: linear-gradient(to right, rgb(0, 255, 179), lightcoral);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    } 
+/* Navbar link hover effect */
+.navbar-nav .nav-link {
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+}
+
+    .navbar-nav .nav-link:hover {
+
+        border-bottom: 3px solid rgb(0, 255, 179);
+
+    }
+
+    .boy {
+            border-radius: 50%;
+            border: 9px solid rgb(2, 255, 179);
+            display: block;
+            margin-left: 75%;
+            margin-top: -370px; /* Adjust this value to move the image higher or lower */
+            width: 280px;
+            height: 280px;
+        }
+
+       
+        
+        @media (max-width: 992px) {
+            .boy {
+            margin-top: 10px;
+            margin-left: 60px;
+            }
+        }
+
+        .download-cv a {
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+       
+
+        .download-cv a.hire-me:hover {
+            background-color: rgb(7, 136, 97);
+            color: white;
+        }
+        .card:hover {
+            border-color:rgb(0, 255, 149); 
+            border-radius: 2px;
+        }   
+       
+    </style>
+</head>
+<body style="background-color: #000000;">
+<!--START OF NAV BAR-->
+
+<div class="nav-hover">
+<div class="container-fluid bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <h4 class="name">Mohamed Fazlan</h4>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects Skills
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="android1.html">Android Developing</a></li>
+                        <li><a class="dropdown-item" href="web.html">Web Developing</a></li>
+                        <li><a class="dropdown-item" href="iot.html">Internet Of Things</a></li>
+                        <li><a class="dropdown-item" href="netbean.html">Java Projects</a></li>
+
+                        
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback_form.html" style="text-decoration: none;">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html" style="text-decoration: none;">Contact</a>
+                  </li>
+                </ul><!-- end of ul tag -->
+            </div><!-- end of collapse -->
+        </div><!-- end of fluid -->
+    </nav><!-- end of nav -->
+</div><!-- end of container fluid -->
+</div>
+<!--END OF NAV BAR-->
+
+
+<!-- Start of myself-->
+<header class="container">
+    <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        
+        <h4>Keeping Coding</h4>
+        <div class="image-setting">
+          <img src="images/image logo.png" alt="">
+      </div>
+      
+        <h1>Hi, I'm <span>Fazlan</span>,
+            <br>Software Engineer</h1>
+
+        <br>
+
+        <h5>This is my official portfolio website to showcase all my work
+        <br>details and works</h5>
+
+     
+    </div>
+
+    
+
+
+
+
+    <img src="images/fazlan.jpg" class="boy" alt="Fazlan">
+
+   
+       <pre>
+
+
+
+       </pre>
+       <br>
+
+
+       <div class="download-cv">
+        <a href="#">Download My CV</a>
+
+        <a href="#" class="hire-me" id="hireMeBtn">Hire Me</a>
+    </div>
+    
+    <script>
+        document.getElementById('hireMeBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default button behavior
+
+            // Prepare the email details
+            var toEmail = 'fazlanm244@gmail.com'; 
+            var subject = 'Hire Me Request';
+            var body = 'Someone has hired you. Thank you!';
+
+            // Create the mailto link
+            var mailtoLink = 'mailto:' + toEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+            // Open the mailto link to send the email
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+
+    <!--banner start-->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-md-12 bg-dark text-light p-10">
+                    <h1>About <span>Me</span></h1>
+        <p>"I'm an undergraduate software student with a passion for learning about programming and 
+        software development. I enjoy working on both the visible and behind-the-scenes parts 
+        of apps.
+        Alongside Java, Python, and JavaScript, I'm also diving into Android development. 
+        I'm eager 
+        to keep learning and apply 
+        my skills to create practical and user-friendly mobile applications."</p>
+
+            </div><!--end of col 12-->
+        </div><!--end of row-->
+
+    <!-- end if banner -->
+
+ 
+</header>
+
+<div class="social-icon-container">
+    <a href="https://www.instagram.com/easycodeworks?igsh=MTdpazM0MWN5ODljNw%3D%3D&utm_source=qr" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+    <a href="https://www.linkedin.com/in/mohamed-fazlan45678/" target="_blank" class="social-icon"><i class='bx bxl-linkedin-square'></i></a>
+</div>
+
+
+
+<!--- START OF THE CARD VIEW-->
+
+<div class="container">
+    <div class="row">
+        <h2>MY | SKILLS</h2>
+        <pre></pre>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem; background-color:#161618; height: 100%;">
+                <span class="blur"></span>
+                <img src="images/cardimage.png" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #fff;">My Android Developing | Skills</h5>
+                    <a href="android1.html" class="btn btn-primary">View Activities</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem; background-color:#161618; height: 100%;">
+                <img src="images/webimage.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #fff;">My Web Developing | Skills</h5>
+                    <a href="web.html" class="btn btn-primary">View Activities</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem; background-color:#161618; height: 100%;">
+                <img src="images/IOT.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #fff;">Internet Of Things (IOT) | Skills</h5>
+                    <a href="iot.html" class="btn btn-primary">View Activities</a>
+                </div>
+            </div>
+        </div>
+    </div><!--end of row-->
+</div><!-- end of container-->
+
+ 
+    <div class="container">
+        <div class="row">
+   
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem; background-color:#161618; height: 100%;">
+            <img src="images/java.png" class="card-img-top" alt="..." height="220px">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #fff;">Java Pojects</h5>
+                <a href="netbean.html" class="btn btn-primary">View Activities</a>
+            </div>
+        </div>
+    </div>
+
+  
+
+</div><!--end of row-->
+
+</div><!--end of container-->
+    
+
+
+
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

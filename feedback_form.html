@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="images/form-logo.jpg">
+    <title>Feedback Form</title>
+    <style>
+         .navbar {
+            justify-content: center;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-brand {
+            margin-right: auto;
+        }
+        .navbar-logo {
+            margin-right: 20px; /* Adjust this value to move the logo further to the left */
+        }
+
+        .navbar-nav .nav-link {
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+}
+
+    .navbar-nav .nav-link:hover {
+
+        border-bottom: 3px solid rgb(0, 255, 179);
+
+    }
+
+    h4 {
+            color: wheat;
+            padding-bottom: 20px;
+            font-size: large;
+        }
+
+
+    h4{
+            animation: fadeInUp 7s ease-in-out infinite;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .box1 {
+      background-color: #000000;
+      border-radius: 10px;
+      padding: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .box1:hover {
+      background-color: #353535;
+    }
+    .heading{
+        font-size: 30px;
+    
+    }
+
+    button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+
+
+
+    <div class="nav-hover">
+        <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                  <h4 class="name">Mohamed Fazlan</h4>
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects Skills
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="android1.html">Android Developing</a></li>
+                                <li><a class="dropdown-item" href="web.html">Web Developing</a></li>
+                                <li><a class="dropdown-item" href="iot.html">Internet Of Things</a></li>
+                                <li><a class="dropdown-item" href="netbean.html">Java Projects</a></li>
+
+
+                                
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feedback_form.html" style="text-decoration: none;">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html" style="text-decoration: none;">Contact</a>
+                          </li>
+                        </ul><!-- end of ul tag -->
+                    </div><!-- end of collapse -->
+                </div><!-- end of fluid -->
+            </nav><!-- end of nav -->
+        </div><!-- end of container fluid -->
+        </div>
+        <!--END OF NAV BAR-->
+
+
+        
+        
+    
+        
+         
+            <!-- start form -->
+            <div class="image">
+                    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+              
+                        <form name="form"class="box1" action="https://formsubmit.co/6b67e6715a4c1a4464d33b05faf8dfce" method="POST">
+                            <h4 class="heading"><span style="color:rgb(0, 255, 213);">Feedback <span style="color: aquamarine;">Form</span></h4>
+
+                            <div class="mb-3 text-white">
+                                
+                                <label for="exampleInputEmail1" class="form-label">Feedback Box</label>
+                                <textarea name="feedback" id="feedback1" type="text"     required="message-control" placeholder="Feedback"></textarea>
+
+                            </div>
+
+                            <button type="submit">Send</button>
+                          
+                          </form>
+                 
+            </div>
+        
+            <!-- end of form  -->
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+
+</body>
+</html>
